@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Oswald:wght@200&family=Poiret+One&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+    background: black;
+    font-family:'Montserrat',sans-serif;
+}
+a{
+    position: relative;
+    background: none;
+    padding:15px 30px;
+    font-weight: bold;
+    color:crimson;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: .5s linear;
+    transition-delay:0s;
+}
+a:hover{
+    background: crimson;
+    color:white;
+    transition: .5s linear;
+    transition-delay: 1s;
+}
+a span{
+    display: block;
+    position: absolute;
+}
+a span:nth-child(1){
+    top:0;
+    left:-100%;
+    height:2px;
+    width:100%;
+    background: linear-gradient(90deg,transparent,crimson);
+    transition: 0.5s;
+    transition-delay:1s;
+    
+}
+a:hover span:nth-child(1){
+    left:100%;
+    transition: 1s;
+
+}
+a span:nth-child(2){
+    top:-100%;
+    right:0;
+    height:100%;
+    width:2px;
+    background: linear-gradient(180deg,transparent,crimson);
+    transition: 0.5s;
+    transition-delay:0.75s;
+}
+a:hover span:nth-child(2){
+    top:100%;
+    transition: 1s;
+    transition-delay:0.25s;
+
+}
+a span:nth-child(3){
+    bottom:0;
+    right:-100%;
+    height:2px;
+    width:100%;
+    background: linear-gradient(270deg,transparent,crimson);
+    transition: 0.5s;
+    transition-delay:0.25s;
+}
+a:hover span:nth-child(3){
+    right:100%;
+    transition: 1s;
+    transition-delay:0.5s;
+
+}
+a span:nth-child(4){
+    top:100%;
+    left:0%;
+    height:100%;
+    width:2px;
+    background: linear-gradient(360deg,transparent,crimson);
+    transition: 0.5s;
+    transition-delay:0s;
+}
+a:hover span:nth-child(4){
+    top:-100%;
+    transition: 1s;
+    transition-delay:0.75s;
+
+}
+

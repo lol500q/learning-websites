@@ -1,0 +1,50 @@
+body{
+    margin:0;
+    padding:0;
+    background: #f1f1f1;
+    font-family: sans-serif;
+}
+.box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.icon{
+    display: inline-block;
+    width:120px;
+    position: relative;
+}
+.icon i{
+    color:black;
+    display: block;
+    font-size: 80px;
+    text-align: center;
+}
+.icon span{
+    width:120px;
+    background: black;
+    padding:5px 0;
+    border-radius: 5px;
+    color:white;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    opacity: 0;
+    transition: .6s opacity;
+
+}
+.icon:hover > span{
+    opacity: 1;
+}
+.icon span:before{
+    content: '';
+    width:10px;
+    height:10px;
+    position: absolute;
+    top:85px;
+    background: black;
+    left:50%;
+    transform: translateX(-50%) rotate(45deg);
+
+}

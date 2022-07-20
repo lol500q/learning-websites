@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: row wrap;
+}
+.button{
+    width: 450px;
+    box-shadow: 0 14px 28px rgba(0,0,0,.1),
+                0 10px 10px rgba(0,0,0,.2)
+}
+.button button{
+    background: #2573a7;
+    padding:15px 16px;
+    font-size: 28px;
+    color:white;
+    border:1px solid #206592;
+    border-radius: 5px;
+    width:100%;
+    cursor:pointer;
+    outline: none;
+}
+.button form{
+    display: flex;
+    flex-flow: row nowrap;
+    background: #1c567d;
+    padding: 20px;
+    border-radius: 5px;
+}
+form input{
+    padding:12px;
+    border-radius: 3px;
+}
+form input[type='email']{
+    flex:1;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid transparent;
+}
+form input[type='email']:focus{
+    border: 1px solid #206592;
+}
+form input[type="submit"]{
+    color:white;
+    outline: none;
+    cursor: pointer;
+    padding:0 15px;
+    margin: 0 0 0 2px;
+    font-size: 17px;
+    background: linear-gradient(#2980b9,#206592);
+    border: 1px solid #1c567d;
+}
+form input[type="submit"]:hover{
+    background: linear-gradient(#206592,#2980b9);
+    transition: .5s;
+}
+@media (max-width:600px){
+    form{
+        flex-flow: row wrap;
+    }
+    form input{
+        padding: 14px!important;
+        margin: 0px!important;
+        flex:100%;
+    }
+    form input[type="submit"]{
+        margin-top:14px!important;
+        font-size: 20px;
+    }
+}
+form.hide{
+    display: none;
+}

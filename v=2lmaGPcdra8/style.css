@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position: fixed;
+    top:0;
+    left:0;
+    background: white;
+    height:85px;
+    width:100%;
+    z-index: 1;
+    border-bottom: 1px solid silver;
+}
+nav label{
+    line-height: 85px;
+    padding:0 80px;
+    font-size: 50px;
+    color:#0d0d0d;
+    font-family: 'Montserrat',sans-serif;
+}
+label span{
+    color:#0089f2;
+}
+nav .scroll-line{
+    height:2px;
+    background: #0089f2;
+    width:0%;
+}
+.content{
+    margin-top: 90px;
+    padding:0 80px;
+}
+.content h1{
+    font-size: 55px;
+    font-family: 'Open Sans',sans-serif; 
+}
+.content p{
+    padding:10px 0;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Noto Sans',sans-serif;
+}
+.content h2{
+    font-size: 45px;
+    font-family: 'Open Sans',sans-serif;
+}
+.content ul{
+    padding-left: 30px;
+}
+ul li{
+    font-size: 20px;
+    font-family: 'Noto Sans',sans-serif;
+}
+.content center{
+    font-size: 25px;
+    padding:10px;
+    color:#1a1a1a;
+    font-family: 'Open sans',sans-serif;
+}

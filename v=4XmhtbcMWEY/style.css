@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background: url('roger.jpg') no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+img{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+}
+.box{
+    width:450px;
+    background: rgba(0,0,0,0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color:white;
+    font-family: 'Montserrat',sans-serif;
+}
+.box h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+
+}
+.box h5{
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.box p{
+    text-align: justify;
+}
+.box ul{
+    margin: 0;
+    padding: 0;
+}
+.box li{
+    list-style: none;
+    display: inline-block;
+    margin:6px;
+}
+.box li a{
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+    color:#b9b9b9;
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(45deg,#d6e3f5,#fff 100%);
+}
+.container{
+    font-size: 70px;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    font-family: 'Lato',sans-serif;
+}
+.container span:nth-child(2){
+    animation-delay: .05s;
+}
+.container span:nth-child(3){
+    animation-delay: .1s;
+}
+.container span:nth-child(4){
+    animation-delay: .15s;
+}
+.container span:nth-child(5){
+    animation-delay: .2s;
+}
+.container span:nth-child(6){
+    animation-delay: .25s;
+}
+.container span:nth-child(7){
+    animation-delay: .3s;
+}
+.container span:nth-child(8){
+    animation-delay: .35s;
+}
+.container span:nth-child(9){
+    animation-delay: .4s;
+}
+.container span:nth-child(10){
+    animation-delay: .45s;
+}
+.container span:nth-child(11){
+    animation-delay: .5s;
+}
+.container span:nth-child(12){
+    animation-delay: .55s;
+}
+.container span:nth-child(13){
+    animation-delay: .6s;
+}
+
+.container span{
+    color:#27ae60;
+    opacity: 0;
+    display: inline-block;
+    animation: animate .5s forwards;
+    transform: translate(-300px,0) scale(0);
+}
+@keyframes animate {
+    60%{
+        transform: translate(20px,0) scale(1);
+        color:#27ae60;
+    }
+    80%{
+        transform: translate(20px,0) scale(1);
+        color:#27ae60;
+    }
+    99%{
+        transform: translate(0) scale(1.2);
+        color:#ff3f3f;
+    }
+    100%{
+        transform: translate(0) scale(1);
+        color:#27ae60;
+        opacity: 1;
+    }
+    
+}

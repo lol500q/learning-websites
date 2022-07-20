@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('gigachad.jpg') no-repeat center center;
+    font-family: 'Montserrat',sans-serif;
+    background-size: cover;
+    height:100vh;
+}
+a{
+    text-decoration: none;
+    color:white;
+    background: rgba(29,171,209,1);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:84px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 50%;
+    animation: animate 2s linear infinite;
+}
+@keyframes animate{
+    0%{
+        box-shadow:0 0 0 0 rgba(29,171,209,0.6),
+                    0 0 0 0 rgba(29,171,209,0.6);
+    }
+    30%{
+        box-shadow:0 0 0 50px rgba(29,171,209,0),
+                    0 0 0 0 rgba(29,171,209,0.6);
+    }
+    65%{
+        box-shadow:0 0 0 50px rgba(29,171,209,0),
+                    0 0 0 30px rgba(29,171,209,0);
+    }
+    100%{
+        box-shadow:0 0 0 0 rgba(29,171,209,0),
+                    0 0 0 30px rgba(29,171,209,0);
+    }
+}

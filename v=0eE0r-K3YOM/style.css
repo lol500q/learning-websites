@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    height: 500px;
+    width:500px;
+    background:linear-gradient(135deg,#000000 0%,#000000 0%,
+    #000000 25%,#1e539e 50%,#ff3083 75%,#7800a8 100%);
+    background-repeat: no-repeat;
+    background-size: 400% 400%;
+    cursor:pointer;
+    transition: all .5s;
+}
+.center .img{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: url("gigachad.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: screen;
+    opacity:.9;
+}
+.center:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.4);
+    background-size: 100% 100%;
+}

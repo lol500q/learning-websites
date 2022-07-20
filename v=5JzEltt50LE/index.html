@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer"></div>
+    <div class="inner">
+        <span>0%</span>
+    </div>
+</body>
+<script>
+    let count=0;
+    let outer=document.querySelector(".outer");
+    let inner=document.querySelector(".inner");
+    let percent=document.querySelector("span");
+    inner.addEventListener('click',function(){
+        let loading=setInterval(animate,100);
+        function animate(){
+            if(count == 100){
+                console.log('q');
+                clearInterval();
+                outer.classList.remove('active-loader');
+                outer.classList.add('active-loader2');
+            }
+            else{
+                console.log('aa');
+                count = count+1;
+                percent.textContent=count+'%';
+                outer.classList.add('active-loader');
+            }
+        };
+    });
+</script>
+</html>

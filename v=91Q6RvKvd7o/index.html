@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png"  class="Logo" alt="sorry"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What`s New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It`s not just Coffee<br>It`s<span>
+                    Starbucks
+                </span></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nisi ut laborum nostrum repellendus architecto quidem porro quo soluta explicabo sed, veritatis fugit, tenetur dolorem in et officia distinctio aspernatur omnis obcaecati optio voluptatibus mollitia? Itaque deserunt excepturi quod rem a nobis voluptates, ad minima maxime. Sunt ullam saepe debitis.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks" alt="sorry">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img onclick="imgSlider('img1.png');
+                changeCircleColor('#0173143')" src="thumb1.png" alt="sorry"></li>
+            <li><img onclick="imgSlider('img2.png');
+                changeCircleColor('#eb7495')" src="thumb2.png" alt="sorry"></li>
+            <li><img onclick="imgSlider('img3.png');
+                changeCircleColor('#d755b1')" src="thumb3.png" alt="sorry"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png" alt="sorry"></a></li>
+            <li><a href="#"><img src="twitter.png" alt="sorry"></a></li>
+            <li><a href="#">
+                <img src="instagram.png" alt="sorry">
+            </a></li>
+        </ul>
+    </section>
+
+<body>
+    <script>
+        function imgSlider(anything){
+            document.querySelector(".starbucks").src=anything;
+        }
+        function changeCircleColor(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start-btn">
+        <a href="#">View Model</a>
+    </div>
+    <div class="center model-box">
+        <div class="fas fa-times"></div>
+        <div class="fas fa-envelope icon1"></div>
+            <header>Don`t miss updates from us!</header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, perspiciatis.</p>
+            <form action="">
+                <div class="fas fa-envelope icon2"></div>
+                    <input type="email" placeholder="abc@exmample.com">
+                    <button>Subscribe</button>
+            </form>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+    </div>
+    <script src="https://kit.fontawesome.com/06e6f33fe9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" >
+    </script>
+    <script>
+        $(document).ready(()=>{
+            $('.start-btn').click(()=>{
+                console.log('saas');
+                $('.model-box').toggleClass("show-model");
+                $('.start-btn').toggleClass("show-model");
+            });
+            $('.fa-times').click(()=>{
+                console.log('saas');
+                $('.model-box').toggleClass("show-model");
+                $('.start-btn').toggleClass("show-model");
+            });
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans',sans-serif;
+    background: #f1f1f1;
+}
+.doc{
+    width:1000px;
+    margin: auto;
+    background: white;
+}
+header{
+    height:320px;
+    background: url('gigachad.jpg') no-repeat;
+    background-color: black;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+}
+.h-c{
+    text-align: center;
+    margin:12px 0;
+}
+header img{
+    width: 350px;
+    height: 200px;
+    opacity:0.7;
+    margin:0;
+}
+header h2{
+    opacity: 0.7;
+    margin:0;
+    font-size: 30px;
+}
+.content{
+    margin: 30px 60px;
+
+}
+.content p{
+    text-align: justify;
+}
+.content form label{
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+}
+.content form input[type="text"]{
+    width:600px;
+    font-size:16px;
+    font-weight: 600;
+    border:1px solid #cecaca;
+    background: #f1f1f1;
+    padding: 14px 37px;
+    margin: 8px 0; 
+}
+.content form input[type="button"]{
+    background: black;
+    border:none;
+    color:white;
+    display: block;
+    margin: auto;
+    padding:20px 60px;
+    cursor: pointer;
+}

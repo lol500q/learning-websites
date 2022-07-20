@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="doc">
+        <div class="sidebar">
+            <div class="sidehide">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <img src="gigachad.jpg" alt="sorry">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Setting</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>sidebar</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora autem vel quia recusandae ea, sapiente tenetur ad, nemo expedita architecto obcaecati, quidem eos aperiam quos unde laudantium id? Recusandae ab explicabo earum, suscipit, quae, voluptate sunt placeat veniam doloribus consequatur eaque? Ab nulla quod veniam, nihil, sed magni repudiandae architecto amet in et eaque delectus fugit atque. Modi adipisci inventore nam asperiores, quisquam consectetur similique, quae sit et veniam voluptatem fuga autem quidem nulla quam vero nemo. Consectetur necessitatibus atque ab minima magni nesciunt id, blanditiis unde eius architecto soluta molestias corrupti commodi sint ipsam ut ducimus vero repellendus reprehenderit.</p>
+            <span class="hide">Show Sidebar</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/06e6f33fe9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <script>
+        $(document).ready(()=>{
+           $('.hide').click(()=>{
+            $('.doc').toggleClass("show");
+           })
+        })
+    </script>
+
+</body>
+</html>

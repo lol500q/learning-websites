@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background: #e74c3c;
+    font-family:'Montserrat',sans-serif;
+}
+.color{
+    margin-top:300px;
+    text-align: center;
+}
+#text{
+    display: block;
+    color:white;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin:20px;
+}
+.color button{
+    background: none;
+    outline:none;
+    color:white;
+    border: 3px solid white;
+    cursor: pointer;
+    font-size: 24px;
+}

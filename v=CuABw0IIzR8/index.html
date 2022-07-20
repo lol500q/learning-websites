@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>Login Form</header>
+        <form>
+            <div class="input-field">
+                <input type="text" required>
+                <label >Email or Username</label>
+            </div>
+            <div class="input-field">
+                <input  class="pswrd" type="password" required>
+                <span class="show">SHOW</span>
+                <label >Password</label>
+            </div>
+            <div class="button">
+                <div class="inner"></div>
+                <button>Login</button>
+            </div>
+        </form>
+        <div class="auth">Or Login with</div>
+        <div class="link">
+            <div class="facebook">
+                <i class="fab fa-facebook-square"><span>Facebook</span></i>
+            </div>
+            <div class="google">
+                <i class="fab fa-google-plus-square"><span>Google</span></i>
+            </div>
+        </div>
+        <div class="signup">
+            Note a member?<a href="#">Signup now</a>
+        </div>
+    </div>
+    <script>
+        let input=document.querySelector('.pswrd');
+        let show=document.querySelector('.show');
+        show.addEventListener('click',active);
+        function active(){
+            if(input.type==="password"){
+                input.type="text";
+                show.style.color="#1da1f2";
+                show.textContent="HIDE";
+            }
+            else{
+                input.type="password";
+                show.style.color="#111";
+                show.textContent="SHOW";
+            }
+        }
+
+    </script>
+    <script src="https://kit.fontawesome.com/06e6f33fe9.js" crossorigin="anonymous"></script>
+</body>
+</html>

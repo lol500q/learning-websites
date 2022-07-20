@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+body{
+    background: #333;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat",sans-serif;
+}
+.container{
+    width:360px;
+    height:600px;
+    background: url('gigachad.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    text-align: center;
+
+}
+.container h1{
+    font-size: 40px;
+    margin-top:125px;
+    margin-bottom: 60px;
+}
+.tbox{
+    width:260px;
+    height: 40px;
+    background: #f1f1f1b3;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+.tbox input{
+    background: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    width:90%;
+    line-height: 37px;
+    font-family: 'Montserrat',sans-serif;
+    color:#333;
+
+}
+.btn{
+    width:260px;
+    height: 40px;
+    background: #3498db;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: block;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
+.b1{
+    display: block;
+    width:260px;
+    padding:10px 0;
+    text-align: center;
+    color:white;
+    text-decoration: none;
+    margin: 10px auto;
+    transition: .4s all;
+}
+.b2{
+    position: absolute;
+    bottom: 80px;
+    left:50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    text-align: center;
+    color:#3498db;
+
+}
+a:hover{
+    background: #00000040;
+}

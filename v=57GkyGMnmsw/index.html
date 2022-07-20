@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="button">Menu
+            <span class="fas fa-bars"></span>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+
+        </ul>
+    </div>
+    <script src="https://kit.fontawesome.com/06e6f33fe9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $('.button').click(()=>{
+                if($('.button').hasClass('expand')){
+                    $('ul').slideUp(()=>{
+                        $('.button').removeClass('expand');
+                        $('.fas').removeClass('expand');
+                    });
+                }else{
+                    $('button').addClass('expand');
+                    setTimeout(()=>{
+                        $('.fas').addClass('expand');
+                        $('ul').stop().slideDown();
+                    },200);
+                }
+                $('.button').toggleClass('expand');
+                $('.fas').toggleClass('expand');
+            })
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.wave{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:100%;
+    text-align: center;
+}
+label{
+    font-size: 50px;
+    font-weight: 500;
+    color:silver;
+    cursor:pointer;
+}
+label span{
+    font-size: 50px;
+    font-weight: 500;
+    display: inline-block;
+    transition: .3s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+label:hover span{
+    color:#27ae60;
+    transform: translateY(-30px);
+}

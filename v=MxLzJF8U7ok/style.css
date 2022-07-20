@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: black;
+}
+a{
+    position: relative;
+    height: 55px;
+    width:180px;
+    line-height: 55px;
+    text-transform: uppercase;
+    margin:0 20px;
+    border-radius: 4px;
+    transition: .5s linear;
+    font-family: 'Poppins', sans-serif;
+}
+a.btn1{
+    color:#2980b9;
+    border: 1px solid #2980b9;
+}
+a.btn2{
+    color:#27ae60;
+    border:1px solid #27ae60;
+}
+a.btn1:before,a.btn1:after,
+a.btn2:before,a.btn2:after{
+    position: absolute;
+    content:'';
+    z-index:-1;
+    opacity: 0;
+    transition: all .5s;
+}
+a.btn1:before,a.btn1:after{
+    left:0;
+    height:0;
+    width:100%;
+    background: #2980b9;
+}
+a.btn1:before{
+    top:50%;
+}
+a.btn1:after{
+    bottom:50%;
+}
+a.btn1:hover:before,a.btn1:hover:after{
+    opacity: 1;
+    height: 50%;
+}
+a.btn1:hover{
+    color:white;
+}
+/**/
+a.btn2:before,a.btn2:after{
+    top:0;
+    height:100%;
+    width:0;
+    background: #27ae60;
+}
+a.btn2:before{
+    left:50%;
+}
+a.btn2:after{
+    right:50%;
+}
+a.btn2:hover:before,a.btn2:hover:after{
+    opacity: 1;
+    width: 50%;
+}
+a.btn2:hover{
+    color:white;
+}

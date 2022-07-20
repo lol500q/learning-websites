@@ -1,0 +1,60 @@
+body{
+    margin:0;
+    margin: 0;
+    background: #313131;
+    font-family: sans-serif;
+}
+.center-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.center-box div{
+    width:600px;
+    height:60px;
+    background: #3498db;
+    margin-bottom: 10px;
+    overflow: hidden;
+    color:#313131;
+}
+.center-box span{
+    float: left;
+    width:40px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    margin-right:10px;
+}
+.center-box p{
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size:16px;
+    line-height: 60px;
+}
+.m1{
+    background: #3498db;
+}
+.m1 span{
+    background: #2980b9;
+}
+.m2{
+    background: #2ecc71!important;
+}
+.m2 span{
+    background: #27ae60;
+}
+.m3{
+    background: #f1c40f!important;
+}
+.m3 span{
+    background: #f39c12;
+}
+.m4{
+    background: #e74c3c!important;
+}
+.m4 span{
+    background: #e60c3c;
+}

@@ -1,0 +1,59 @@
+.s{
+    position:relative;
+}
+.s input{
+    display: none;
+}
+.s1{
+    width:100px;
+    height:40px;
+    background: #ccc;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+    transition: .4s;
+}
+.s1:before{
+    content: '';
+    position: absolute;
+    width:32px;
+    height:32px;
+    left:4px;
+    bottom:4px;
+    background: white;
+    transition: .4s;
+}
+.s input:checked +.s1{
+    background:#03a9f4;
+}
+.s input:checked +.s1:before{
+    left:64px;
+}
+.s2{
+    width:100px;
+    height:40px;
+    background: #ccc;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.s2:before{
+    content: '';
+    position: absolute;
+    width:32px;
+    height:32px;
+    left:4px;
+    bottom:4px;
+    background: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+.s input:checked +.s2{
+    background:#03a9f4;
+}
+.s input:checked +.s2:before{
+    left:64px;
+}

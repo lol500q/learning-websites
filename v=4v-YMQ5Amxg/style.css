@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,#e8effd 0%,#d6e3f5 100%);
+}
+.btn{
+    position: relative;
+    display: inline-flex;
+    height:60px;
+    width:200px;
+    margin: 17px 20px;
+    overflow: hidden;
+    border-radius:5px;
+    transition: all .5s;
+
+}
+.btn .inner{
+    position: absolute;
+    width:300%;
+    height:100%;
+    left:-100%;
+    z-index: -1;
+    transition: all .5s;
+    
+}
+.btn button{
+    height:100%;
+    width:100%;
+    border:none;
+    outline: none;
+    background: none;
+    color:white;
+    font-size:20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn1 .inner{
+    background: -webkit-linear-gradient(right,#00dbde,#fc00ff,#00dbde ,
+    #fc00ff)
+}
+.btn2 .inner{
+background: -webkit-linear-gradient(right,#f7b733,#fc4a1a,#f7b733,#fc4a1a);
+}
+.btn3 .inner{
+background: -webkit-linear-gradient(right,#f1c40e,#26a65b,#f1c40e,#26a65b);
+}
+.btn4 .inner{
+    background: -webkit-linear-gradient(right,#43cea2,#185a9d,
+    #43cea2,#185a9d);
+}
+.btn:hover .inner{
+    left:0;
+
+}
+.btn:hover{
+    transform: scale(1.03);
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="images">
+        <img onclick="changeimg(this)" src="luffy.jpg" alt="sorry">
+        <img onclick="changeimg(this)" src="parasiote.jpg" alt="sorry">
+        <img onclick="changeimg(this)" src="razor.jpeg" alt="sorry">
+    </div>
+    <div class="pre">
+        <a  onclick="display(this)" class="fa-solid fa-xmark" href="#"></a>
+        <img id="p" src="luffy.jpg" alt="sorry">
+    </div>
+    <script>
+        const display=(a)=>{
+            a.parentElement.style.display='none'
+        }
+        const changeimg=(image)=>{
+            const p=document.getElementById('p');
+            p.src=image.src;
+            p.parentElement.style.display="block";
+
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/06e6f33fe9.js" crossorigin="anonymous"></script>
+</body>
+</html>

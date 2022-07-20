@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding:0;
+    background: #313131;
+}
+.box{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.box a{
+    text-decoration: none;
+    color:white;
+    font-size: 40px;
+    margin:10px;
+    display:flex;
+    width:60px;
+    height:60px;
+    justify-content: center;
+    align-items: center;
+    float:left;
+    transition: all .5s;
+}
+a:nth-child(1){
+    background:#2980b9;
+}
+a:nth-child(2){
+    background:#3498db;
+}
+a:nth-child(3){
+    background:#e74c3c;
+}
+a:nth-child(4){
+    background:#27ae60;
+}
+a:nth-child(5){
+    background: #e67e22;
+}
+.box a:hover{
+    margin-top: -10px;
+}

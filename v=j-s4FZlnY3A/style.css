@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+}
+.btn{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: #e74c3c;
+    color:white;
+    padding:10px 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#box{
+    width:500px;
+    overflow: hidden;
+    background: #f1f1f1;
+    box-shadow: 0 0 20px black;
+    border-radius: 8px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    padding:10px;
+    text-align: center;
+    display: none;
+}
+#box span{
+    color:#2ecc71;
+    font-size: 40px;
+    display: block;
+    margin:20px 0;
+}
+#box h1{
+    color:#333;
+}
+.close{
+    font-size: 20px;
+    color:white;
+    padding:10px 30px;
+    cursor:pointer;
+    background: #3498db;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 4px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Works</a>
+            <a href="#">Contact</a>
+
+        </div>
+    </div>
+    <p>
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum accusamus eum, asperiores, ex corrupti delectus iure, enim nobis explicabo similique sit accusantium earum ullam error nihil sapiente id beatae odit maxime recusandae sequi libero labore omnis nam! Quod sint sed qui, deleniti nihil, cupiditate modi iusto, facilis porro corporis aliquam optio molestiae repudiandae quam debitis pariatur. Quam iusto facilis perspiciatis porro ab officiis neque inventore blanditiis? Velit illo ab quae, assumenda nulla incidunt consequuntur perferendis magnam itaque earum ex blanditiis nemo, iste dicta animi! Esse officia, officiis reiciendis provident cupiditate ipsa nam veniam eum. Quidem iure voluptatem atque ullam deleniti recusandae qui asperiores incidunt corporis cumque minus molestias placeat est esse ex cum repellendus enim obcaecati quasi, omnis, vel distinctio assumenda. Consequuntur, officia iure! Eaque harum, minima atque quia facilis libero? Fugiat dolores quasi explicabo minima optio debitis et ipsa autem molestiae, fuga incidunt quis, ut, rerum magnam suscipit nostrum corrupti quibusdam tempora. Quod dolorum maiores, ut est et autem explicabo, nobis assumenda consequuntur magni nihil nisi veritatis. Dignissimos, esse qui. Iusto, nesciunt aperiam. Rerum, aut ratione, quidem ex commodi at doloribus, aspernatur quod vitae voluptatibus dolor voluptas incidunt dolorem. Dolorum, aspernatur, velit officia sint ab obcaecati expedita accusantium, quam assumenda veritatis soluta reprehenderit! Aut, consectetur eveniet architecto fugiat corporis debitis at nam maxime voluptatem, modi, nemo tempore iste iure provident ut aliquam placeat autem similique ab aspernatur! Harum, natus. Fugiat id quasi et suscipit alias totam voluptate impedit eaque, reiciendis nulla nemo quam quae ipsam. Id ullam ipsam soluta, adipisci, eum non dolorum, amet culpa ipsum fugiat dolores deleniti! Velit quidem modi eos cumque vero perspiciatis incidunt culpa non, provident amet eum quis, ducimus doloremque soluta enim fugiat libero voluptatum quos! Vero, dignissimos! Ea blanditiis quos voluptas laboriosam cum saepe assumenda officia doloremque nemo vitae hic, quam dolorum a.
+    </p>
+    <script>
+        let nav=document.getElementsByClassName('navigation');
+        window.onscroll=function sticky(){
+            if(window.pageYOffset>nav[0].offsetTop){
+                nav[0].classList.add("nav");
+            }
+            else{
+                nav[0].classList.remove("nav");
+            }
+        }
+    </script>
+</body>
+</html>

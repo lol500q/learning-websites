@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <i class="fas fa-chevron-up"></i>
+    <div class="sec1"></div>
+    <h1>Scroll Top Button</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus animi commodi a iste ab quaerat iusto velit excepturi voluptatum cumque delectus beatae dolor quibusdam omnis, minus vitae quisquam eaque reiciendis repudiandae ullam debitis nemo. Esse quod quibusdam ratione consectetur ut voluptate dicta tempore eos, nemo a rerum corporis, expedita natus fugit ad ea nisi suscipit pariatur! Omnis et, consectetur, quae accusantium ipsum eius saepe velit quaerat magni, illo voluptas. Voluptate eum rem voluptatem placeat mollitia aperiam facere velit? Doloremque autem deserunt voluptate saepe, hic illum nihil, exercitationem perspiciatis corrupti aliquid temporibus. Incidunt sit voluptatibus quod veritatis temporibus possimus, odio harum accusamus hic quia aut beatae distinctio ab dignissimos? Blanditiis beatae quos, quis perferendis ducimus perspiciatis impedit nulla voluptatum sint temporibus corrupti id ullam obcaecati in cupiditate quia vero magni eos dicta necessitatibus expedita enim iste magnam ipsa? Consectetur corrupti perspiciatis porro itaque hic voluptate facere eaque soluta illum, harum veritatis!</p>
+    <div class="sec2"></div>
+    <h1>Section 2</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus animi commodi a iste ab quaerat iusto velit excepturi voluptatum cumque delectus beatae dolor quibusdam omnis, minus vitae quisquam eaque reiciendis repudiandae ullam debitis nemo. Esse quod quibusdam ratione consectetur ut voluptate dicta tempore eos, nemo a rerum corporis, expedita natus fugit ad ea nisi suscipit pariatur! Omnis et, consectetur, quae accusantium ipsum eius saepe velit quaerat magni, illo voluptas. Voluptate eum rem voluptatem placeat mollitia aperiam facere velit? Doloremque autem deserunt voluptate saepe, hic illum nihil, exercitationem perspiciatis corrupti aliquid temporibus. Incidunt sit voluptatibus quod veritatis temporibus possimus, odio harum accusamus hic quia aut beatae distinctio ab dignissimos? Blanditiis beatae quos, quis perferendis ducimus perspiciatis impedit nulla voluptatum sint temporibus corrupti id ullam obcaecati in cupiditate quia vero magni eos dicta necessitatibus expedita enim iste magnam ipsa? Consectetur corrupti perspiciatis porro itaque hic voluptate facere eaque soluta illum, harum veritatis!</p>
+    <script src="https://kit.fontawesome.com/06e6f33fe9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" >
+        </script>
+        <script>
+        
+        $(document).ready(()=>{
+            $(window).scroll(()=>{
+                if($(window).scrollTop() > 300){
+                    $('i').css({
+                        "opacity":"1",
+                        "pointer-events":"auto"
+                    });
+                }else{
+                    $('i').css({
+                        "opacity":"0",
+                        "pointer-events":"none"
+                    });
+                }
+            });
+            $('i').click(function(){
+                $('html').animate({scrollTop:0}, 500);
+            });
+        });
+    </script>
+</body>
+</html>

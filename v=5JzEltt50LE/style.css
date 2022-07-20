@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+html,body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background: #240f52;
+    overflow:hidden;
+}
+.outer{
+    height:300px;
+    width:300px;
+    background: linear-gradient(135deg,
+    #feed07 0%,
+    #fe6a50 5%,
+    #ed00aa 15%,
+    #2fe3f3 50%,
+    #8900ff 100%);
+    border-radius: 50%;
+}
+@keyframes rotate {
+    to{
+        transform: rotate(360deg);
+    }
+}
+.inner{
+    position: absolute;
+    width:275px;
+    height:275px;
+    line-height: 275px;
+    text-align: center;
+    border-radius: 50%;
+    background: #240f52;
+    cursor: default;
+}
+.inner span{
+    font-size: 60px;
+    font-weight: 800;
+    background: linear-gradient(135deg,
+    #feed07 0%,
+    #fe6a50 5%,
+    #ed00aa 15%,
+    #2fe3f3 50%,
+    #8900ff 100%);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-size: 300%;
+}
+.outer.active-loader{
+    animation: rotate 2s ease infinite;
+}
+.outer.active-loader2{
+    animation:rotate2 3s ease;
+}
+@keyframes rotate2{
+    to{
+        transform: rotate(360deg);
+    }
+}

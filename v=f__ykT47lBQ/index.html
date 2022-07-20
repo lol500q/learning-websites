@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center slider">
+        <div class="image">
+        <div class="slide img1"><img src="egg.jpg"></div>
+        <div class="slide"><img src="khlil.jpg"></div>
+        <div class="slide"><img src="nshat.jpg"></div>
+        <div class="slide"><img src="mansour.jpg"></div>
+        <div class="slide"><img src="profile.jpg"></div>
+
+
+
+
+        </div>
+        <div class="buttons">
+            <a href="#" class="btn1 aha1 active"></a>
+            <a href="#" class="btn2 aha2"></a>
+            <a href="#" class="btn3 aha3"></a>
+            <a href="#" class="btn4 aha4"></a>
+            <a href="#" class="btn5 aha5"></a>
+
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $('.btn1').click(()=>{
+                $('.img1').css(
+                    "marginLeft","0"
+                )
+            });
+            $('.btn2').click(()=>{
+                $('.img1').css(
+                    "marginLeft","-20%"
+                )
+            });
+            $('.btn3').click(()=>{
+                $('.img1').css(
+                    "marginLeft","-40%"
+                )
+            });
+            $('.btn4').click(()=>{
+                $('.img1').css(
+                    "marginLeft","-60%"
+                )
+            });
+            $('.btn5').click(()=>{
+                $('.img1').css(
+                    "marginLeft","-80%"
+                )
+            });
+            $('a').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+            }
+            )
+            // $('a').click((e)=>{
+            //    if($(e.target).css('background')==="white"){
+            //     $(e.target).css('background',"none");
+            //     console.log("boya");
+            //    }
+            //    else{
+                
+            //     $(e.target).css('background',"white");
+            //    }
+
+            });
+            
+      
+        </script>
+
+    
+</body>
+</html>

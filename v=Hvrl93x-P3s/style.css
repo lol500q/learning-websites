@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.center h1{
+    font-size: 100px;
+    color:white;
+    background: repeating-linear-gradient(-45deg,red 0%,yellow 7.14%,rgb(0,255,0) 14.28%,
+    rgb(0,255,255) 21.14%,cyan 28.56%,blue 35.7%,magenta 42.84%,red 50%);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 10s linear infinite forwards;
+}
+@keyframes slide {
+    0%{
+        background-position-x:0%;
+    }
+    100%{
+        background-position-x: 600vw;
+    }
+    
+}

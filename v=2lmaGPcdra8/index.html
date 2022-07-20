@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <label >Mohammed<span>Ayesh</span></label>
+
+        <div class="scroll-line"></div>
+    </nav>
+        <div class="content">
+            <h1>Page Scroll Indicator</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ullam magnam inventore, error hic saepe rem id repellendus, at ipsam vitae optio, autem repudiandae incidunt facere libero sed obcaecati perferendis alias. Nesciunt ea modi reiciendis explicabo. Laudantium temporibus sunt tenetur. Praesentium mollitia odit architecto nisi culpa, cupiditate consectetur ab a totam fugiat qui quas nam ipsa amet, sed assumenda aliquid sapiente? Voluptates suscipit vel minima pariatur totam? Ab id possimus, quos voluptatem libero delectus quae?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, laborum. Temporibus, tempora optio id provident deserunt, impedit cumque aliquam doloremque, accusamus repellat praesentium earum ipsam illum? Voluptate vitae beatae quia neque laborum vero in? Aliquid tenetur quae consequuntur, reprehenderit placeat similique accusamus blanditiis sit modi quia vero sunt, voluptatem dignissimos molestiae reiciendis vel maxime! Vel officia maiores eaque, illum molestias aut necessitatibus odio laudantium a praesentium dolores hic, eum suscipit? Quisquam, nostrum et? Maxime, commodi.</p>
+            <h2>DashBoard Section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi reiciendis, vel dicta est fugit tempora omnis architecto ex rerum consequatur. Architecto mollitia nostrum sit sed dolores veniam aliquid enim, velit animi beatae ad aspernatur possimus temporibus doloremque itaque nisi maiores modi odit delectus atque laboriosam nobis accusamus eligendi aliquam. Asperiores iusto, eum quo similique aliquid architecto laborum autem voluptas corporis minus hic molestiae, ipsam tempora porro voluptate expedita delectus labore recusandae facilis incidunt. Cupiditate, cum?</p>
+            <ul>
+                <li>User Account</li>
+                <li>Profule Picture</li>
+                <li>Messages List</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ipsa placeat deleniti eaque quis exercitationem quod dicta incidunt laudantium recusandae cum id blanditiis, voluptates nemo veritatis quia impedit eligendi culpa soluta, magnam consequuntur pariatur voluptatibus harum! Quaerat quo sapiente, quis eaque accusamus natus. Quos iure omnis quod eligendi vitae, veniam necessitatibus quae ipsa nisi. Quas repellendus eum a rem officiis ipsam ad quia inventore reprehenderit, magnam nesciunt molestiae natus ipsa autem recusandae excepturi nemo soluta.</p>
+            <h2>Blog Section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi reiciendis, vel dicta est fugit tempora omnis architecto ex rerum consequatur. Architecto mollitia nostrum sit sed dolores veniam aliquid enim, velit animi beatae ad aspernatur possimus temporibus doloremque itaque nisi maiores modi odit delectus atque laboriosam nobis accusamus eligendi aliquam. Asperiores iusto, eum quo similique aliquid architecto laborum autem voluptas corporis minus hic molestiae, ipsam tempora porro voluptate expedita delectus labore recusandae facilis incidunt. Cupiditate, cum?</p>
+            <ul>
+                <li>User Account</li>
+                <li>Profule Picture</li>
+                <li>Messages List</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ipsa placeat deleniti eaque quis exercitationem quod dicta incidunt laudantium recusandae cum id blanditiis, voluptates nemo veritatis quia impedit eligendi culpa soluta, magnam consequuntur pariatur voluptatibus harum! Quaerat quo sapiente, quis eaque accusamus natus. Quos iure omnis quod eligendi vitae, veniam necessitatibus quae ipsa nisi. Quas repellendus eum a rem officiis ipsam ad quia inventore reprehenderit, magnam nesciunt molestiae natus ipsa autem recusandae excepturi nemo soluta.</p>
+            <h2>Service Section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi reiciendis, vel dicta est fugit tempora omnis architecto ex rerum consequatur. Architecto mollitia nostrum sit sed dolores veniam aliquid enim, velit animi beatae ad aspernatur possimus temporibus doloremque itaque nisi maiores modi odit delectus atque laboriosam nobis accusamus eligendi aliquam. Asperiores iusto, eum quo similique aliquid architecto laborum autem voluptas corporis minus hic molestiae, ipsam tempora porro voluptate expedita delectus labore recusandae facilis incidunt. Cupiditate, cum?</p>
+            <ul>
+                <li>User Account</li>
+                <li>Profule Picture</li>
+                <li>Messages List</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ipsa placeat deleniti eaque quis exercitationem quod dicta incidunt laudantium recusandae cum id blanditiis, voluptates nemo veritatis quia impedit eligendi culpa soluta, magnam consequuntur pariatur voluptatibus harum! Quaerat quo sapiente, quis eaque accusamus natus. Quos iure omnis quod eligendi vitae, veniam necessitatibus quae ipsa nisi. Quas repellendus eum a rem officiis ipsam ad quia inventore reprehenderit, magnam nesciunt molestiae natus ipsa autem recusandae excepturi nemo soluta.</p>
+            <center>"you reached the bottom of the page"</center>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $(window).scroll(()=>{
+                let windowTop=$(window).scrollTop(),
+                documentHeight=$(document).height(),
+                windowHeight=$(window).height();
+                let scroll=(windowTop/(documentHeight-windowHeight))*100;
+                $('.scroll-line').css(
+                    "width",(scroll+'%')
+                );
+
+                
+            });
+        });
+    </script>
+</body>
+</html>

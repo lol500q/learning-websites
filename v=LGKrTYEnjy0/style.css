@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+}
+.header{
+    background: url('gigachad.jpg') no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+.h1{
+    max-width: 1000px;
+    margin:auto;
+    padding:20px 0; 
+}
+.h1 h1{
+    font-size: 44px;
+}
+.h1 p{
+    font-weight: bold;
+    font-size: 60px;
+}
+.h1 a{
+    text-decoration: none;
+    color:white;
+    background: #8bc34a;
+    font-size: 30px;
+    padding:4px 20px;
+    border-radius: 30px;
+    margin:10px;
+}

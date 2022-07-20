@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat',sans-serif;
+}
+.p1{
+    position: relative;
+    height: 100%;
+    background: url('gigachad.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.p1{
+    position: relative;
+    height: 100%;
+    width:100%;
+    background: url('roger.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.p3{
+    position: relative;
+    height: 100%;
+    background: url('qwz.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.sec{
+    position: absolute;
+    top:50%;
+    right:200px;
+    color:white;
+}
+.sec p{
+    font-size: 18px;
+    text-align: justify;
+    margin:0;
+
+}
+.sec a{
+    background: ;
+    color:white;
+    font-size: 18px;
+    display: block;
+    text-decoration: one;
+}

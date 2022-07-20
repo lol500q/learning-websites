@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo">Ayesh</li>
+            <li class="items"><a href="#">Home</a></li>
+            <li class="items"><a href="#">About</a></li>
+            <li class="items"><a href="#">Blogs</a></li>
+            <li class="items"><a href="#">Contact</a></li>
+            <li class="items"><a href="#">Feedback</a></li>
+            <li class="btn"><a href="#"><i class="fa fa-bars"></i>
+            </a></li>
+        </ul>
+    </nav>
+    <script src="https://kit.fontawesome.com/06e6f33fe9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <script>
+        $(document).ready(()=>{
+            $('.btn').click(()=>{
+                $('.items').toggleClass("show");
+                $('ul li').toggleClass("hide");
+            })
+        });
+    </script>
+
+</body>
+</html>

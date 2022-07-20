@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Poppins',sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: #9b59b6;
+}
+.card{
+    width:400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    background: #f1f1f1;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #000000b3;
+}
+.card-header{
+    height:300px;
+    overflow: hidden;
+    position: relative;
+}
+.card-header img{
+    height:100%;
+}
+.card-header .cover{
+        background: #9b59b6b3;
+        position: absolute;
+        top:0;
+        width:100%;
+        height:100%;
+    
+}
+.card-header .menu{
+    position: absolute;
+    top:20px;
+    right:20px;
+    align-items: center;
+    color:white;
+    opacity: .7;
+    cursor:pointer;
+    display:flex;
+    transition: all .5s;
+}
+.card-header .name{
+    position: absolute;
+    bottom:20px;
+    left:20px;
+    color:white;
+    opacity: .7;
+}
+.card-header .last{
+    display: block;
+    font-size: 36px;
+}
+.card-header .first{
+    font-size: 48px;
+    display: block;
+}
+
+.card-header .menu span{
+    font-size: 32px;
+}
+.card-header .menu ul li{
+    float:left;
+    width:30px;
+    text-align: center;
+
+}
+.card-header .menu ul{
+    background: #333333b3;
+    padding:6px 0;
+    margin: 0 14px;
+    display: none;
+}
+.card-header .menu:hover > ul{
+    display: block;
+}
+.container{
+    padding:20px;
+    overflow: hidden;
+}
+.left-section{
+    width:260px;
+    overflow: hidden;
+    float:left;
+}
+.left-section h3{
+    color:#9b59b6;
+}
+.left-section p{
+    margin:30px 0;
+}
+.left-section .followbtn{
+    width:100%;
+    background: #9b59b6;
+    border-radius: 12px;
+    color:white;
+    text-align: center;
+    display: block;
+    padding:8px 0;
+    transition: .2s all;
+}
+.left-section .followbtn:hover{
+    background: #8e44ad;
+}
+.right-section{
+    overflow: hidden;
+    float: right;
+    text-align: center;
+}
+.items{
+    margin: 6px 0;
+}
+.num{
+    display: block;
+    font-size: 36px;
+}
+.word{
+    font-size: 16px;
+}
+

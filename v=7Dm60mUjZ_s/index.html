@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="button">
+        <button>Sign Up for My New Page</button>
+        <form class="hide">
+            <input type="email" placeholder="abc@example.com" id="email">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <script>
+        $(document).ready(()=>{
+            $('button').click(()=>{
+                $('form').slideDown(200);
+                $('button').css({
+                    "border":"none",
+                    "cursor":"default",
+                    "borderBottomLeftRadius":"0px",
+                    "borderBottomRightRadius":"0px"
+                });
+                $('form').css({
+                    "borderTopLeftRadius":"0px",
+                    "borderTopRightRadius":"0px"
+                });
+                $('#email').focus();
+            });
+
+        });
+    </script>
+</body>
+</html>
