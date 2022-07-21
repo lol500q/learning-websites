@@ -19,7 +19,7 @@
         <div class="img8x">
             <img src="ronaldo.png" alt="sorry">
         </div>
-        <ul class="nav">
+        <ul class="nav" id="nav">
             <li><a href="#">Home</a></li>
             <li><a href="#" class="active">About</a></li>
             <li><a href="#">Performance</a></li>
@@ -32,5 +32,14 @@
                 <li><a href="#">Instagram</a></li>
             </ul>
     </section>
+    <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+    <script>
+        function menuToggle(){
+            let nav=document.getElementById("nav");
+            nav.classList.toggle('active');
+            let toggle=document.getElementById("toggle");
+            toggle.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
