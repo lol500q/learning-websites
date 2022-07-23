@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&family=Ubuntu:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+section{
+    position:absolute;
+    bottom:50%;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(50%);
+    align-items: center;
+}
+section .content{
+    padding:100px;
+}
+section .content h1{
+    color:rgb(31,72,193);
+    font-size:3em;
+    margin-bottom:25px;
+}
+section .content p{
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+section .content .form{
+    width:200px;
+    position: relative;
+}
+section .content .form input{
+    width:100%;
+    padding:10px 5px;
+    border-radius: 20px;
+    border:none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background:rgb(245,243,245);
+    margin-bottom:20px;
+}
+section .content .form a{
+    position: absolute;
+    margin-top: 5px;
+    margin-right: 5px;
+    right:0;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    background: rgb(255,168,26);
+}
+.content button{
+    padding:10px 30px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.5);
+    background: rgb(255,168,26);
+    color:rgb(31,72,193);
+    text-shadow:10px;
+    font-weight: 700;
+}
+section .imgBox img{
+    border-radius: 20px;
+    transform: translate(-15% ,25px);
+}
+section .imgBox{
+   
+}
