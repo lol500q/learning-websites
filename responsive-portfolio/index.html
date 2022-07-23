@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hello World<br>I`m<span>Mohammed Ayesh</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eveniet, quibusdam esse eligendi mollitia molestiae, quas corrupti itaque aperiam minus placeat deserunt culpa. Quisquam possimus, molestias illum cumque temporibus maiores eaque commodi fugiat tempore recusandae?</p>
+            <a href="#">Know More</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+    <script src="https://kit.fontawesome.com/06e6f33fe9.js" crossorigin="anonymous"></script>
+    <script>
+        function toggle(){
+            let sec=document.getElementById('sec');
+            let nav=document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+
+        }
+    </script>
+</body>
+</html>
